@@ -11,5 +11,5 @@ public class Student
     // This is a collection navigation property. It holds other entities that are related to this entity.
     // Collection navigation props have to implement ICollection<T> interface. List<T> and HashSet<T> are common.
     // Arrays are invalid because they don't have an Add method.
-    public ICollection<Enrollment> Enrollments { get; set; }
+    public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
 }
